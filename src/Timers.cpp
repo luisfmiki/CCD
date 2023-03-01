@@ -29,7 +29,7 @@ void cfgTimerCLK(){
     OCR0B = 3; // 128 -> 7.375kHz? <- ajustar esse valor para calibrar a freq de CLK 
     OCR0A = 3; // idem, valor de comparacao de 8-bit 
     
-    TCNT0 = 2; // reset timer0 
+    TCNT0 = 3; // reset timer0 
 
-    //TIMSK0 = (1 << OCIE0A); 
+    TIMSK0 = (1 << OCIE0A); 
 } 

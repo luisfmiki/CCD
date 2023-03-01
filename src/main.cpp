@@ -7,7 +7,7 @@
 
 /* armazenamento dos dados, ToDo: tratamento dos dados */
 uint16_t amostras[SIZE];
-volatile uint16_t amostraIndex = 0;
+volatile uint8_t amostraIndex = 0;
 
 /* bloco de interrupcoes ------------------------------------------- */
 ISR(TIMER1_OVF_vect){ 
