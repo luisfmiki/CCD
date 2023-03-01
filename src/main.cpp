@@ -11,7 +11,7 @@ volatile uint16_t amostraIndex = 0;
 
 /* bloco de interrupcoes ------------------------------------------- */
 ISR(TIMER1_OVF_vect){ 
-TCCR0B = 0x2; // calibra o prescale (ativa o timer0 -> CLK) 
+TCCR0B = 0x1; // calibra o prescale (ativa o timer0 -> CLK) 
 } 
 
 ISR(ADC_vect){ 

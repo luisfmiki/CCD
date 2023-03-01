@@ -31,5 +31,5 @@ void cfgTimerCLK(){
     
     TCNT0 = 2; // reset timer0 
 
-    TIMSK0 = (1 << OCIE0A); 
+    //TIMSK0 = (1 << OCIE0A); 
 } 
