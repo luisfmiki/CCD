@@ -22,7 +22,7 @@ void cfgTimerSI(int tINT){
 /* aqui usamos o timer0 para gerar o CLK no pino 6 (OC0B)*/ 
 
 void cfgTimerCLK(){ 
-    TCCR2A = (1 << COM0B0) | (1 << WGM01); // modo CTC toggle 
+    TCCR0A = (1 << COM0B0) | (1 << WGM01); // modo CTC toggle 
 
     OCR0B = 50; //  <- ajustar esse valor para calibrar a freq de CLK 
     OCR0A = 150; // idem, valor de comparacao de 8-bit 
